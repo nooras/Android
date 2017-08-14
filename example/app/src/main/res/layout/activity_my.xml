@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.codept.example.MyActivity"
+    android:background="@drawable/scen" >
+    <EditText
+
+        android:textSize="30dp"
+        android:hint="ENTER 2nd NUMBER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/number2"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/number1"
+        android:layout_alignLeft="@+id/number1"
+        android:layout_alignStart="@+id/number1" />
+
+    <EditText
+        android:hint="ENTER 1st NUMBER"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/number1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="-"
+        android:textSize="50dp"
+        android:layout_width="wrap_content"
+        android:onClick="sub"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnadd"
+        android:layout_alignBottom="@+id/btnadd"
+        android:layout_alignRight="@+id/number1"
+        android:layout_alignEnd="@+id/number1"
+        android:id="@+id/btnsub" />
+
+    <Button
+        android:text="+"
+        android:textSize="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="add"
+        android:id="@+id/btnadd"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/number2"
+        android:layout_alignStart="@+id/number2" />
+
+    <Button
+        android:text="*"
+        android:textSize="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="mul"
+        android:id="@+id/btnmul"
+        android:layout_below="@+id/btnadd"
+        android:layout_alignLeft="@+id/btnadd"
+        android:layout_alignStart="@+id/btnadd"
+        android:layout_marginTop="27dp" />
+
+    <Button
+        android:text="/"
+        android:textSize="50dp"
+        android:onClick="div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btndiv"
+        android:layout_alignBaseline="@+id/btnmul"
+        android:layout_alignBottom="@+id/btnmul"
+        android:layout_alignLeft="@+id/btnsub"
+        android:layout_alignStart="@+id/btnsub" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/btndiv"
+        android:layout_centerHorizontal="true" />
+
+    android:id="@+id/button" />
+</RelativeLayout>
